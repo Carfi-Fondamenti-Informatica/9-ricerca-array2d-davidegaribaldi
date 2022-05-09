@@ -3,6 +3,13 @@
 using namespace std;
 int main() {
    char nome[10][20],nomericerca[20];
+    for(int i=0;i<10;i++)
+    {
+        for(int j=0;j<20;j++)
+        {
+            nome[i][j]=0;
+        }
+    }
    for(int i=0;i<10;i++)
    {
    cin>>nome[i];
@@ -24,4 +31,3 @@ int main() {
 
     return 0;
 }
-
