@@ -42,12 +42,12 @@ int funz(char nome[10][20],char ricerca[20])
 
             }
             if (c == dim1) {
-                posizione = i ;
+                posizione = i;
+            }
             }
             c = 0;
             dim1 = 0;
-            dim=0;
-        }
+
     }
     return posizione;
 }
