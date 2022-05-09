@@ -1,8 +1,25 @@
 #include "lib.h"
 int funz(char nome[10][20],char ricerca[20])
 {
-    int dim1=0,c=0,posizione=-1;
-
+    int dim1=0,c=0,posizione=-1,a=0;
+    for(int i=0;i<10;i++)
+    {
+        for(int j=0;j<20;j++)
+        {
+            a=(int)nome[i][j];
+            if(a>=65 && a<=90) {
+                a = a + 32;
+                nome[i][j] = (char) a;
+            }
+        }
+    }
+    for(int j=0;j<20;j++) {
+        a = (int) ricerca[j];
+        if (a >= 65 && a <= 90) {
+            a = a + 32;
+            ricerca[j] = (char) a;
+        }
+    }
     for(int j=0;j<20;j++)
     {
         if(ricerca[j]!=0)
